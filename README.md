@@ -5,18 +5,18 @@
 ## Content
 
 * [Global](#h-global)
-* [Cursor movement](h-movement)
-* [Insert mode - inserting/appending text](h-imode)
-* [Editing](h-editing)
-* [Marking text (visual mode)](h-marking)
-* [Visual commands](h-vmode)
-* [Cut and paste](h-cutpaste)
-* [Search and replace](h-search)
-* [Search in multiple files](h-searchfiles)
-* [Exiting](h-exiting)
-* [Working with multiple files](h-multifiles)
-* [Tabs](h-tabs)
-* [Questions](h-qna)
+* [Cursor movement](#h-movement)
+* [Insert mode - inserting/appending text](#h-imode)
+* [Editing](#h-editing)
+* [Marking text (visual mode)](#h-marking)
+* [Visual commands](#h-vmode)
+* [Cut and paste](#h-cutpaste)
+* [Search and replace](#h-search)
+* [Search in multiple files](#h-searchfiles)
+* [Exiting](#h-exiting)
+* [Working with multiple files](#h-multifiles)
+* [Tabs](#h-tabs)
+* [Questions](#h-qna)
 
 
 ## <a name="h-global"></a>Global
