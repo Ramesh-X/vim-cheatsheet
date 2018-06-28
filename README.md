@@ -1,8 +1,8 @@
 # Vim Cheatsheet
 
->Disclaimer: This cheatsheet is summarized from personal experience and other online tutorials. It should not be considered as an official advice.
+>Disclaimer: This cheatsheet is summarized from personal experience and other online tutorials. It should not be considered as an official advice. You can check [vim documentation here](http://vimdoc.sourceforge.net/htmldoc/help.html).
 
-## Content
+## <a name="h-content"></a>Content
 
 * [Global](#h-global)
 * [Cursor movement](#h-movement)
@@ -29,36 +29,52 @@
 
 ## <a name="h-movement"></a>Cursor movement
 ```bash
-h        # move cursor left
-j        # move cursor down
-k        # move cursor up
-l        # move cursor right
-H        # move to top of screen
-M        # move to middle of screen
-L        # move to bottom of screen
-w        # jump forwards to the start of a word
-W        # jump forwards to the start of a word (words can contain punctuation)
-e        # jump forwards to the end of a word
-E        # jump forwards to the end of a word (words can contain punctuation)
-b        # jump backwards to the start of a word
-B        # jump backwards to the start of a word (words can contain punctuation)
-0        # jump to the start of the line
-^        # jump to the first non-blank character of the line
-$        # jump to the end of the line
-g_       # jump to the last non-blank character of the line
-gg       # go to the first line of the document
-5gg      # go tp line 5
-G        # go to the last line of the document
-5G       # go to line 5
-fx       # jump to next occurrence of character x
-tx       # jump to before next occurrence of character x
-}        # jump to next paragraph (or function/block, when editing code)
-{        # jump to previous paragraph (or function/block, when editing code)
-zz       # center cursor on screen
-Ctrl + b # move back one full screen
-Ctrl + f # move forward one full screen
-Ctrl + d # move forward 1/2 a screen
-Ctrl + u # move back 1/2 a screen
+h          # move cursor left
+j          # move cursor down
+k          # move cursor up
+l          # move cursor right
+
+H          # move to top of screen
+M          # move to middle of screen
+L          # move to bottom of screen
+
+w          # jump forwards to the start of a word
+W          # jump forwards to the start of a word (words can contain punctuation)
+e          # jump forwards to the end of a word
+E          # jump forwards to the end of a word (words can contain punctuation)
+b          # jump backwards to the start of a word
+B          # jump backwards to the start of a word (words can contain punctuation)
+ge         # jump backwards to the end of a word
+gE         # jump backwards to the end of a word (words can contain punctuation)
+
+0          # jump to the start of the line
+^          # jump to the first non-blank character of the line
+$          # jump to the end of the line
+g_         # jump to the last non-blank character of the line
+
+gg         # go to the first line of the document
+<number>gg # go to line given by the number
+G          # go to the last line of the document
+<number>G  # go to line given by the number
+}          # jump to next paragraph (or function/block, when editing code)
+{          # jump to previous paragraph (or function/block, when editing code)
+(          # jump forward one sentence
+)          # jump backward one sentence
+fx         # jump to next occurrence of character x
+tx         # jump to before next occurrence of character x
+
+mx         # mark 'x' at the current cursor position
+'x         # jump to the beginning of the line of mark 'x'
+`x         # jump to the cursor position of mark 'x'
+''         # return to the line where the cursor was before the latest jump (Two single quotes.)
+``         # return to the cursor position before the latest jump (undo the jump) (Two back ticks)
+'.         # jump to the last-changed line
+
+zz         # center cursor on screen
+Ctrl + b   # move back one full screen
+Ctrl + f   # move forward one full screen
+Ctrl + d   # move forward 1/2 a screen
+Ctrl + u   # move back 1/2 a screen
 ```
 
 ## <a name="h-imode"></a>Insert mode - inserting/appending text
