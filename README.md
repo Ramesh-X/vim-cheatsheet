@@ -2,7 +2,24 @@
 
 >Disclaimer: This cheatsheet is summarized from personal experience and other online tutorials. It should not be considered as an official advice.
 
-## Global
+## Content
+
+* [Global](#h-global)
+* [Cursor movement](h-movement)
+* [Insert mode - inserting/appending text](h-imode)
+* [Editing](h-editing)
+* [Marking text (visual mode)](h-marking)
+* [Visual commands](h-vmode)
+* [Cut and paste](h-cutpaste)
+* [Search and replace](h-search)
+* [Search in multiple files](h-searchfiles)
+* [Exiting](h-exiting)
+* [Working with multiple files](h-multifiles)
+* [Tabs](h-tabs)
+* [Questions](h-qna)
+
+
+## <a name="h-global"></a>Global
 ```bash
 :help keyword # open help for keyword
 :o file       # open file
@@ -10,7 +27,7 @@
 :close        # close current pane
 ```
 
-## Cursor movement
+## <a name="h-movement"></a>Cursor movement
 ```bash
 h        # move cursor left
 j        # move cursor down
@@ -44,7 +61,7 @@ Ctrl + d # move forward 1/2 a screen
 Ctrl + u # move back 1/2 a screen
 ```
 
-## Insert mode - inserting/appending text
+## <a name="h-imode"></a>Insert mode - inserting/appending text
 ```bash
 i        # insert before the cursor
 I        # insert at the beginning of the line
@@ -56,7 +73,7 @@ ea       # insert (append) at the end of the word
 Esc      # exit insert mode
 ```
 
-## Editing
+## <a name="h-editing"></a>Editing
 ```bash
 r        # replace a single character
 J        # join line below to the current one
@@ -73,7 +90,7 @@ u        # undo
 Ctrl + r # redo
 ```
 
-## Marking text (visual mode)
+## <a name="h-marking"></a>Marking text (visual mode)
 ```bash
 v        # start visual mode, mark lines, then do a command (like y-yank)
 V        # start linewise visual mode
@@ -88,7 +105,7 @@ Esc      # exit visual mode
 Ctrl + v # start visual block mode
 ```
 
-## Visual commands
+## <a name="h-vmode"></a>Visual commands
 ```bash
 >       # shift text right
 <       # shift text left
@@ -97,7 +114,7 @@ d       # delete marked text
 ~       # switch case
 ```
 
-## Cut and paste
+## <a name="h-cutpaste"></a>Cut and paste
 ```bash
 yy       # yank (copy) current line
 5yy      # yank (copy) 5 lines
@@ -115,7 +132,7 @@ d0       # delete (cut) to the begining of the line
 x        # delete (cut) character
 ```
 
-## Search and replace
+## <a name="h-search"></a>Search and replace
 ```bash
 /pattern       # search for pattern
 ?pattern       # search backward for pattern
@@ -127,7 +144,7 @@ N              # repeat search in opposite direction
 :noh           # remove highlighting of search matches
 ```
 
-## Search in multiple files
+## <a name="h-searchfiles"></a>Search in multiple files
 ```bash
 :vimgrep /pattern/ {file} # search for pattern in multiple files
 :cn                       # jump to the next match
@@ -135,7 +152,7 @@ N              # repeat search in opposite direction
 :copen                    # open a window containing the list of matches
 ```
 
-## Exiting
+## <a name="h-exiting"></a>Exiting
 ```bash
 :w              # write (save) the file, but don't exit
 :w !sudo tee %  # write out the current file using sudo
@@ -144,7 +161,7 @@ N              # repeat search in opposite direction
 :q! or ZQ       # quit and throw away unsaved changes
 ```
 
-## Working with multiple files
+## <a name="h-multifiles"></a>Working with multiple files
 ```bash
 :e file       # edit a file in a new buffer
 :bnext or :bn # go to the next buffer
@@ -163,7 +180,7 @@ Ctrl + wj     # move cursor to the window below (horizontal split)
 Ctrl + wk     # move cursor to the window above (horizontal split)
 ```
 
-## Tabs
+## <a name="h-tabs"></a>Tabs
 ```bash
 :tabnew or :tabnew file # open a file in a new tab
 Ctrl + wT               # move the current split window into its own tab
@@ -176,7 +193,7 @@ gT or :tabprev or :tabp # move to the previous tab
 :tabdo command          # run the command on all tabs (e.g. :tabdo q - closes all opened tabs)
 ```
 
-## Questions
+## <a name="h-qna"></a>Questions
 ### Why ESC?
 The Vi editor was originally written on an ADM-3A terminal, which had the Escape key positioned where the Tab key occurs on most modern keyboards.([ref](http://vim.wikia.com/wiki/Avoid_the_escape_key))
 ![](https://i.stack.imgur.com/Wm8r5.jpg)
