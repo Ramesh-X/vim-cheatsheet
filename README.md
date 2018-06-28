@@ -30,6 +30,7 @@ B        # jump backwards to the start of a word (words can contain punctuation)
 $        # jump to the end of the line
 g_       # jump to the last non-blank character of the line
 gg       # go to the first line of the document
+5gg      # go tp line 5
 G        # go to the last line of the document
 5G       # go to line 5
 fx       # jump to next occurrence of character x
@@ -98,14 +99,14 @@ d       # delete marked text
 
 ## Cut and paste
 ```bash
-yy       # yank (copy) a line
-2yy      # yank (copy) 2 lines
+yy       # yank (copy) current line
+5yy      # yank (copy) 5 lines
 yw       # yank (copy) the characters of the word from the cursor position to the start of the next word
 y$       # yank (copy) to end of line
 p        # put (paste) the clipboard after cursor
 P        # put (paste) before cursor
-dd       # delete (cut) a line
-2dd      # delete (cut) 2 lines
+dd       # delete (cut) current line
+5dd      # delete (cut) 5 lines
 dw       # delete (cut) the characters of the word from the cursor position to the start of the next word
 D        # delete (cut) to the end of the line
 d$       # delete (cut) to the end of the line
