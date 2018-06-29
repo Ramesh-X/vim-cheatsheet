@@ -4,7 +4,8 @@
 
 1. [vim documentation](http://vimdoc.sourceforge.net)
 2. [vim main help page](http://vimdoc.sourceforge.net/htmldoc/help.html)
-3. [vim man page](http://linuxcommand.org/lc3_man_pages/vim1.html)
+3. [vim wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki)
+4. [vim man page](http://linuxcommand.org/lc3_man_pages/vim1.html)
 
 ## <a name="h-content"></a>Content
 
