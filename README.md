@@ -1,6 +1,10 @@
 # Vim Cheatsheet
 
->Disclaimer: This cheatsheet is summarized from personal experience and other online tutorials. It should not be considered as an official advice. You can check [vim documentation here](http://vimdoc.sourceforge.net/htmldoc/help.html).
+>Disclaimer: This cheatsheet is summarized from personal experience and other online tutorials. It should not be considered as an official advice. You can check,
+
+1. [vim documentation](http://vimdoc.sourceforge.net)
+2. [vim main help page](http://vimdoc.sourceforge.net/htmldoc/help.html)
+3. [vim man page](http://linuxcommand.org/lc3_man_pages/vim1.html)
 
 ## <a name="h-content"></a>Content
 
